@@ -82,7 +82,12 @@ functions:
           path: testLambda
           method: get
 
-  
+  testSecretsManager:
+    handler: testSecretsManager.testSecretsManager
+    events:
+      - http:
+          path: testSecretsManager
+          method: get
 
     
 #    The following are a few example events you can configure
